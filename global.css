@@ -1,0 +1,122 @@
+        
+        *{
+            outline: none;
+        }
+        body {
+            background-color: #2d333b;
+            color: #eee;
+            font-family:'Courier New', Courier, monospace;
+        }
+
+        h2 {
+            text-align: center;
+            color: #eee;
+            margin-top: 5px;
+            margin-bottom: 0px;
+        }
+
+        h3{
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 30px;
+            font-weight: 100;
+            font-size: medium;
+        }
+
+        form {
+            width: 850px;
+            margin: 0 auto;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 10px;
+            border-collapse: collapse;
+            table-layout: auto;
+        }
+
+        table th,
+        table td {
+            padding: 5px;
+            border: 1px solid #333;
+            word-break: break-word;
+        }
+
+        table th {
+            background-color: #ccc;
+            color: #222;
+        }
+
+        table td input[type="text"],
+        table td input[type="number"],
+        table td input[type="date"],
+        table td select {
+            width: 100%;
+            padding: 5px;
+            border: none;
+            background-color: #10161f;
+            color: #fff;
+            box-sizing: border-box;
+        }
+
+        .btn-group {
+            text-align: right;
+            margin-bottom: 10px;
+        }
+
+        .btn-group button {
+            padding: 8px 16px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-group button:not(:last-child) {
+            margin-right: 5px;
+        }
+
+        .submit_button {
+            padding: 10px 20px;
+            background-color: #13af13;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.5s box-shadow;
+            box-shadow: 0 0 0 #13af13;
+        }
+
+        .remove_button {
+            background-color: transparent;
+            color: #cf2523;
+            border: 0px;
+            padding: 7px 12px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            text-align: center;
+            font-weight: 600;
+            transition: all 0.4s;
+        }
+
+        .remove_button:hover {
+            color: #9f0305;
+        }
+
+        .submit_button {
+            padding: 10px 15px;
+            transition: box-shadow 0.5s;
+        }
+
+        .submit_button:hover {
+            box-shadow: 0 0 10px #13af13, 0 0 20px #13af13;
+        }
+
+        .main-container {
+            margin: auto;
+            background-color: #10161f;
+            padding: 30px 40px;
+            width: fit-content;
+            border-radius: 18px;
+        }

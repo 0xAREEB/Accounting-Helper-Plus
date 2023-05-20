@@ -31,8 +31,15 @@ Accounting Helper+ is a web application project that allows you to generate Ledg
 
 3. Improve User Interface.
 
-<!-- ## Preview -->
-<!-- ![Preview](https://user-images.githubusercontent.com/93572817/234247864-c8ead584-cee1-43bf-a904-09f5be53e26d.png) -->
+ ## Preview 
+ 
+ > Journal Entry Form
+
+ ![image](https://github.com/0xAREEB/Accounting-Helper-Plus/assets/93572817/b95a15e2-91d4-4609-8ef7-9b2d138e1806)
+
+> Generated Ledgers
+
+![image](https://github.com/0xAREEB/Accounting-Helper-Plus/assets/93572817/f8506bef-48eb-41d2-9785-a597043847d2)
 
 <!-- ## Conclusion
 

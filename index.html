@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accounting Helper+</title>
-    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="css/foundation.css" />
   </head>
   <body>
-    <div class="main-container">
-      <h2>Accounting Helper+</h2>
-      <h3>Generate Ledgers from Journal</h3>
-      <form method="POST" action="process_journal.php">
-        <table>
+    <div class="align-center">
+      <div class="align-center text-center">
+        <hr>
+        <h2 style="color: #3adb76">Accounting Helper<small>+</small></h2>
+        <hr>
+      </div>
+      <form method="POST" action="converter.php">
+        <table class="hover stack">
           <thead>
             <tr>
-              <th>Date</th>
-              <th>Description</th>
-              <th>Amount</th>
-              <th>Entry Type</th>
-              <th>Action</th>
+              <th class="text-center">Date</th>
+              <th class="text-center">Description</th>
+              <th class="text-center">Amount</th>
+              <th class="text-center">Entry Type</th>
+              <th class="text-center">Action</th>
             </tr>
           </thead>
           <tbody id="entriesTableBody">
@@ -24,13 +30,30 @@
           </tbody>
         </table>
 
-        <div class="btn-group">
-          <button type="button" onclick="addEntry()">Add Entry</button>
-          <button type="button" onclick="clearEntries()">Clear Entries</button>
+        <div class="align-center-middle button-group">
+          <button
+            class="button hollow"
+            type="button"
+            onclick="addEntry()"
+            style="margin-right: 10px"
+          >
+            Add Entry
+          </button>
+          <button
+            class="alert button hollow"
+            type="button"
+            onclick="clearEntries()"
+          >
+            Clear Entries
+          </button>
         </div>
 
-        <div>
-          <input class="submit_button" type="submit" value="Generate &#8594;" />
+        <div class="align-center-middle button-group">
+          <input
+            class="success button"
+            type="submit"
+            value="Generate &#8594;"
+          />
         </div>
       </form>
     </div>
@@ -41,7 +64,7 @@
         var row = document.createElement("tr");
         row.innerHTML = `
                 <td><input type="date" name="date[]" required></td>
-                <td><input type="text" name="description[]" required></td>
+                <td><input class="text-center" type="text" name="description[]" required></td>
                 <td><input type="number" name="amount[]" required></td>
                 <td>
                     <select name="entryType[]" required>
@@ -49,7 +72,7 @@
                         <option value="credit">Credit</option>
                     </select>
                 </td>
-                <td><button type="button" class="remove_button" onclick="removeEntry(this)">Remove</button></td>
+                <td class="align-center-middle"><button type="button" class="alert button" onclick="removeEntry(this)">Remove</button></td>
             `;
 
         tableBody.appendChild(row);
